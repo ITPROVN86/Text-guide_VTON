@@ -96,15 +96,3 @@ python -m src.infer   --config configs/default.yaml   --checkpoint outputs/check
 python -m src.eval   --config configs/default.yaml   --pred_dir outputs/inference   --split test   --save_csv outputs/metrics.csv
 ```
 
-## 6. Cách dùng cho bài báo
-
-| Method | SSIM ↑ | PSNR ↑ | LPIPS ↓ | FID ↓ | CLIPScore ↑ |
-|---|---:|---:|---:|---:|---:|
-| VITON-HD | tham chiếu | tham chiếu | tham chiếu | tham chiếu | Không hỗ trợ |
-| HR-VITON | tham chiếu | tham chiếu | tham chiếu | tham chiếu | Không hỗ trợ |
-| Proposed ST-VTON | chạy từ code này | chạy từ code này | chạy từ code này | chạy từ code này | chạy từ code này |
-
-## 7. Lưu ý khoa học
-
-Code này là **experimental prototype**, không phải implementation chính thức của VITON-HD hay HR-VITON.  
-Mục tiêu là tạo pipeline thực nghiệm có thể huấn luyện, sinh ảnh, tính metric và mở rộng thành phương pháp đề xuất.
