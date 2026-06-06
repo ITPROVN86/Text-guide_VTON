@@ -1,0 +1,12 @@
+torch>=2.0.0
+torchvision>=0.15.0
+numpy
+pillow
+pyyaml
+tqdm
+pandas
+scikit-image
+opencv-python
+lpips
+torchmetrics
+open_clip_torch

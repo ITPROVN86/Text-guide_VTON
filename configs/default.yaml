@@ -1,0 +1,31 @@
+project_name: ST-VTON
+seed: 42
+
+data:
+  root: "../DataSet/VITON-HD"
+  train_pairs: "train_pairs.txt"
+  test_pairs: "test_pairs.txt"
+  image_size: [256, 192]   # [height, width]; đổi thành [1024, 768] nếu GPU đủ mạnh
+  use_parse_mask: true
+  default_caption: "a photo of a person wearing the target garment"
+
+train:
+  epochs: 20
+  batch_size: 4
+  num_workers: 2
+  lr: 0.0002
+  beta1: 0.5
+  lambda_l1: 10.0
+  lambda_perceptual: 1.0
+  lambda_mask: 2.0
+  save_every: 1
+
+model:
+  base_channels: 64
+  text_dim: 512
+  use_text_condition: true
+
+output:
+  root: "outputs"
+  checkpoint_dir: "outputs/checkpoints"
+  log_dir: "outputs/logs"

@@ -1,0 +1,3 @@
+# Ignore generated output interface files
+outputs/inference/
+outputs/checkpoints/
